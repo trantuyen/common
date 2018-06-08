@@ -2,4 +2,4 @@
 set -m
 
 # Run mongodb
-docker run -it trantuyen/common-mongodb /bin/bash
+docker run -it -p 27017:27017 trantuyen/common-mongodb /bin/bash

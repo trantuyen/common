@@ -10,4 +10,8 @@ fi
 
 $cmd &
 
+if [ ! -f /data/db/.mongodb_password_set ]; then
+    bin/set_password.sh
+fi
+
 fg
